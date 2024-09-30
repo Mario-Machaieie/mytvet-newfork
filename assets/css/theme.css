@@ -11278,9 +11278,11 @@ figure {
   height: 100%;
   z-index: 0;
 }
+/*
 .bg-image:not([class*="absolute"]) {
   position: absolute;
-}
+}*/
+
 .bg-image + .card-body {
   position: relative;
   z-index: 1;
