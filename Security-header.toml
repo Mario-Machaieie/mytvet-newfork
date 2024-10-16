@@ -1,0 +1,79 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self';
+    script-src 'self' 'nonce-random123'
+              https://trusted.cdn.com
+              https://*.googletagmanager.com
+              https://*.google-analytics.com
+              https://*.analytics.google.com
+              https://*.googleadservices.com
+              https://*.googlesyndication.com
+              https://*.google.com
+              https://*.g.doubleclick.net
+              https://*.facebook.net
+              https://*.mailchimp.com
+              https://*.clarity.ms
+              https://*.semrush.com
+              https://payfast.co.za
+              https://*.bing.com
+              https://*.msn.com
+              https://bat.bing.com
+              https://*.microsoftonline.com
+              https://*.microsoft.com;
+    style-src 'self' 'nonce-random123'
+              https://trusted.cdn.com
+              https://fonts.googleapis.com
+              https://*.mailchimp.com;
+    img-src 'self' data: blob: https:
+            https://*.google-analytics.com
+            https://*.googleadservices.com
+            https://*.google.com
+            https://*.facebook.com
+            https://*.doubleclick.net
+            https://*.bing.com
+            https://bat.bing.com
+            https://*.msn.com;
+    font-src 'self' data:
+             https://fonts.gstatic.com
+             https://*.mailchimp.com;
+    object-src 'none';
+    media-src 'self'
+              https://*.mailchimp.com;
+    frame-src 'self'
+              https://*.google.com
+              https://*.doubleclick.net
+              https://*.facebook.com
+              https://payfast.co.za
+              https://drive.google.com
+              https://docs.google.com
+              https://sheets.google.com
+              https://*.bing.com
+              https://*.msn.com;
+    connect-src 'self'
+                https://*.google-analytics.com
+                https://*.analytics.google.com
+                https://*.doubleclick.net
+                https://*.googlesyndication.com
+                https://*.google.com
+                https://*.facebook.com
+                https://*.facebook.net
+                https://*.mailchimp.com
+                https://*.clarity.ms
+                https://*.bing.com
+                https://*.msn.com
+                https://bat.bing.com
+                https://*.microsoftonline.com
+                https://*.microsoft.com
+                https://*.semrush.com;
+    base-uri 'self';
+    form-action 'self'
+                https://*.facebook.com
+                https://payfast.co.za;
+    upgrade-insecure-requests;
+    block-all-mixed-content;"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(self 'https://payfast.co.za'), usb=(), interest-cohort=()"
